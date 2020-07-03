@@ -5,8 +5,8 @@
 :root {
     --primary-color: #08A6E4;
     --color-primary-shadow: rgba(7, 172, 230, .16);
-    --fontOS: 'Open Sans', sans-serif;
-    --fontR: 'Raleway', sans-serif;
+    --fontOpenSans: 'Open Sans', sans-serif;
+    --fontRaleway: 'Raleway', sans-serif;
     --color-redish: #FB3B64;
     --color-green: #55DFB4;
     --color-black: #000000;
@@ -15,11 +15,52 @@
     --color-white: #FFFFFF;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
-    margin: 0;
+    margin: 0 auto;
     width: 1352px;
 }
 
+.page-header {
+    box-shadow: 0 3px 6px #00000029;
+}
+
 .page-header .container {
-    
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container .shop-name {
+    font-size: 32px;
+    font-family: var(--fontRaleway);
+    font-weight: lighter;
+    color: var(--primary-color);
+}
+
+.page-nav-list {
+    display: flex;
+}
+
+.page-nav-list .nav-btn {
+    padding: 22px 18px 22px;
+    font-family: var(--fontOpenSans);
+    font-weight: bold;
+    color: var(--color-grey);
+    letter-spacing: 3.28px;
+    position: relative;
+}
+
+.nav-btn:hover::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #08A6E4;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
