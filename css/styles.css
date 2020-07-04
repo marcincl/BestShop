@@ -180,3 +180,149 @@ a {
     color: var(--color-grey);
 }
 
+
+/* BENEFITS */
+
+.benefits {
+    background-color: var(--color-light-grey);
+    padding: 100px 0;
+}
+
+.benefits__container {
+    padding: 0 100px;
+}
+
+.benefits__box {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #E8E9ED;
+    margin-bottom: 37px;
+}
+
+.benefits__texts {
+    max-width: 415px;
+    margin: 90px 35px;
+}
+
+.benefits__title {
+    font-family: var(--fontRaleway);
+    font-size: 36px;
+}
+
+.benefits__content {
+    font-family: var(--fontOpenSans);
+    font-size: 16px;
+    margin-top: 30px;
+    position: relative;
+    line-height: 20px;
+}
+
+.benefits1__content::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 4px solid var(--color-redish);
+    top: 90px;
+    left: 0;
+    right: 80px;
+    height: 3px;
+}
+
+.laptop {
+    width: 386px;
+    height: auto;
+    margin-top: 117px;
+    margin-bottom: 38px;
+    margin-right: 118px;
+    z-index: 1;
+}
+
+.benefits1__texts::after {
+    content: "";
+    background: var(--color-redish);
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+    border-radius: 40px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -30px;
+    right: 97px;
+}
+
+.benefits2 {
+    flex-direction: row-reverse;
+    /*margin-top: 90px;*/
+    /*margin-right: 35px;*/
+    position: relative;
+}
+
+.benefits2__content::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 4px solid var(--primary-color);
+    top: 90px;
+    left: 0;
+    right: 80px;
+    height: 3px;
+}
+
+.telephone {
+    width: 426px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 70px;
+    z-index: 1;
+}
+
+.benefits2__text::after {
+    content: "";
+    background: var(--primary-color);
+    width: 320px;
+    height: 320px;
+    margin-top: 1px;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 70px;
+}
+
+.double__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits3 {
+    width: 623px;
+    position: relative;
+}
+
+.trumpet__box {
+    width: 440px;
+    height: ;
+    background-color: var(--color-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 37px;
+}
+
+.trumpet__img {
+    width: 295px;
+    height: auto;
+    margin-top: 55px;
+}
+
+.benefits3__content::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 4px solid var(--color-green);
+    top: 90px;
+    left: 0;
+    right: 80px;
+    height: 3px;
