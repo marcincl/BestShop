@@ -19,6 +19,20 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    font-family: var(--fontRaleway);
+    font-size: 36px;
+}
+
+
+
+h3 {
+    font-size: 21px;
+    font-family: var(--fontRaleway);
+    font-weight: bold;
+}
+
+
 .container {
     margin: 0 auto;
     width: 1352px;
@@ -303,7 +317,6 @@ a {
 
 .trumpet__box {
     width: 440px;
-    height: ;
     background-color: var(--color-green);
     display: flex;
     align-items: center;
@@ -326,3 +339,119 @@ a {
     left: 0;
     right: 80px;
     height: 3px;
+}
+
+/* SECTION PRICING */
+
+.pricing {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing__tables {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+.pricing__table {
+    width: 372px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--color-redish);
+}
+
+.pricing__table__professional {
+    width: 405px;
+    margin: 0 40px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 5px 1px 27px var(--color-primary-shadow);
+}
+
+.pricing__table__premium {
+    border: 1px solid var(--color-green);
+}
+
+.pricing__details {
+    text-align: center;
+    margin: 0 0 60px 0 /* do check other margin */
+}
+
+.pricing__level {
+    padding: 34px 0 14px 0;
+}
+
+.pricing__price {
+    font-family: var(--fontOpenSans);
+    font-size: 46px;
+    font-weight: 300;
+    color: var(--color-redish);
+    padding: 14px;
+}
+
+.subheading {
+    font-family: var(--fontRaleway);
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.pricing-item {
+    padding: 20px;
+    font-family: var(--fontOpenSans);
+    font-size: 14px;
+    text-align: center;
+}
+
+.pricing-item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    margin-right: 13px;
+    display: inline-block;
+
+    background-image: url("../assets/Ckechmark-1.svg");
+}
+
+.not_av_item::before {
+    background-image: url("../assets/Close.svg");
+}
+
+.btn {
+    position: relative;
+    font-family: var(--fontOpenSans);
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 23px;
+    color: var(--color-white);
+    background-color: var(--color-redish);
+    padding: 16px 64px;
+    bottom: -23px;
+}
+
+.pricing__professional {
+    --variable-details: var(--primary-color);
+}
+
+.item-pro {
+    padding: 25px;
+}
+
+.pricing__premium {
+    color: var(--color-green)
+}
+
+.btn__professional {
+    background-color: var(--primary-color);
+}
+
+.btn__premium {
+    background-color: var(--color-green);
+}
+
+
