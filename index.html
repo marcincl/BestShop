@@ -10,7 +10,7 @@
 <body>
 
 <header class="page-header">
-    <div class="container">
+    <div class="header__container container">
 
         <a href="/" class="shop-name">BestShop</a>
         
@@ -85,7 +85,9 @@
             <div class="benefits3 benefits__box">
                 <div class="benefits__texts benefits3__texts">
                     <h2 class="benefits__title">Increase recognition your brand!</h2>
-                    <p class="benefits__content benefits3__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <p class="benefits__content benefits3__content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    </p>
                 </div>
             </div>
 
@@ -100,7 +102,7 @@
 <section class="pricing container">
     <h2 class="pricing__heading headings">Pricing</h2>
     <div class="pricing__tables">
-        <div class="pricing__table pricing__table__basic">
+        <div class="pricing__table pricing__table--basic">
             <div class="pricing__details">
                 <h3 class="pricing__level">Basic</h3>
                 <div class="pricing__price">$0</div>
@@ -116,13 +118,13 @@
         </div>
 
 
-        <div class="pricing__table pricing__table__professional">
+        <div class="pricing__table pricing__table--professional">
             <div class="pricing__details">
                 <h3 class="pricing__level">Professional</h3>
                 <div class="pricing__price pricing__professional">$25</div>
                 <h4 class="subheading">Limited offer</h4>
             </div>
-            <ul class="pricing__items pricing__items__professional">
+            <ul class="pricing__items pricing__items--professional">
                 <li class="pricing-item item-pro">500 MB HDD</li>
                 <li class="pricing-item item-pro">2 Subdomain</li>
                 <li class="pricing-item item-pro">5 E-mails</li>
@@ -133,7 +135,7 @@
         </div>
 
 
-        <div class="pricing__table pricing__table__premium">
+        <div class="pricing__table pricing__table--premium">
             <div class="pricing__details">
                 <h3 class="pricing__level">Premium</h3>
                 <div class="pricing__price pricing__premium">$60</div>
@@ -149,11 +151,64 @@
             <a href="#" class="btn btn__premium">Begin</a>
         </div>
     </div>
-
-
 </section>
 
 
+<section class="container contact">
+
+        <div class="contact__boxes">
+            <div class="contact__box contact__box1">
+                <h2>Any questions?</h2>
+                <p class="contact__content">Leave your email address or call us!</p>
+            </div>
+            <div class="contact__box contact__box2">
+                <a href="#" class="contact__details"><img src="assets/Mail%20Icon.svg" alt="email">info@bestshop.xyz</a>
+                <a href="#" class="contact__details"><img src="assets/Phone%20Icon.svg" alt="phone">123 456 789</a>
+            </div>
+        </div>
+
+        <div class="contact__boxes">
+            <form class="form">
+                <div class="form__group">
+                    <label for="name" class="form__label">NAME</label>
+                    <input type="text" id="name" class="form-input"/>
+                </div>
+
+                <div class="form__group">
+                    <label for="email" class="form__label">EMAIL</label>
+                    <input type="email" id="email" class="form-input"/>
+                </div>
+
+                <div class="form__group form__consent">
+                    <label class="form__checkbox">
+                        <input type="checkbox"/>
+                        <span class="checkbox"></span>
+                        <p class="consent__text">
+                        I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
+                        </p>
+                    </label>
+                </div>
+
+                <button class="btn__send" type="submit">Send</button>
+
+            </form>
+        </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__info">
+            <p class="footer__logo">BestShop</p>
+            <p class="footer__content">&copy 2019 BestShop LTD, All Right Reserved</p>
+        </div>
+
+        <div class="footer__social__media">
+            <a href="#"><img src="assets/Twitter.svg" alt="twitter"></a>
+            <a href=""><img src="assets/Facebook.svg" alt="facebook"></a>
+        </div>
+    </div>
+
+</footer>
 
 </body>
 </html>
